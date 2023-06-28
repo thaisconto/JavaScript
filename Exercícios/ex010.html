@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+</head>
+<body>
+    <h1>Sistema de multas</h1>
+    Velocidade do carro: <input type="number" name="txt_velocidade" id="txt_velocidade"> Km/h
+    <input type="button" value="verificar" onclick="calcular()">
+    <div id="resultado"></div>
+  
+    <script>
+        function calcular(){
+        var txt_velocidade = window.document.getElementById('txt_velocidade')
+        var resultado = window.document.getElementById('resultado')
+        var velocidade = Number(txt_velocidade.value)
+        resultado.innerHTML = `<p>Sua velocidade atual é de <strong>${velocidade}</strong> Km/h</p>`
+        if(velocidade>60){
+            resultado.innerHTML += `<p>Você está acima da velocidade máxima permitida de 60 Km/h. <strong>MULTADO</strong>.</p>`
+        }else{
+            resultado.innerHTML += `<p>Você está dentro da velocidade máxima permitida de 60 Km/h.</p>`
+        }
+        resultado.innerHTML += `<p>Dirija sempre com cinto de segurança !</p>`  // +/ é para concatenar as strings   
+    }
+    </script>
+</body>
+</html>

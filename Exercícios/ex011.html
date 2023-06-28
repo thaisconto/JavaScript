@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    </head>
+<body>
+    <h1>Descubra nacionalidade</h1>
+    Digite seu páis de nascimento <input type="text" id="txt_país">
+    <input type="button" value="verificar" onclick="verificar()">
+    <div id="resultado"></div>
+    <script>
+        function verificar(){
+            var país = window.document.getElementById('txt_país')
+            var resultado = window.document.getElementById('resultado')
+            if (país == 'Brasil'){
+                resultado.innerHTML = '<p>Você é <strong>brasileiro(a)<strong></p>'
+            }
+            //else{resultado.innerHTML += '<p>Você é <strong>extrangeiro(a)<strong></p>'}
+        }
+    </script>
+</body>
+</html>

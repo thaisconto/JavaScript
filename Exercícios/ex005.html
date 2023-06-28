@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+       body{
+            background-color: rgb(200, 241, 227);
+            color: black;
+            font: normal 18pt Arial;
+       }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+        //selecionando o primeiro parágrafo nº0 por TagName
+        var p1 = window.document.getElementsByTagName('p')[0]
+        window.document.write('Primeiro paragrafo está escrito: '+ p1.innerText + '<br/>')
+        
+        //também posso mudar o estilo do item selecionado
+        p1.style.color = 'blue';
+        
+        //diferença entre innerText e innerHTML
+        var p2 = window.document.getElementsByTagName('p')[1]
+        window.document.write('innerHTML: ' + p2.innerHTML + '<br/>')
+        window.document.write('innerText: ' + p2.innerText + '<br/>')
+
+        //selecionando o div pelo id, precido criar o id antes
+        var d = window.document.getElementById('msg')
+        d.style.background='green'
+
+        //selecionando nome
+       // var d = window.document.getElementsByName('msg')[0]
+
+       //selecionando por elemento
+       //se for ID é #, se for class é .
+      // var d = window.document.querySelector('div#msg')
+
+</script>
+</body>
+</html>
