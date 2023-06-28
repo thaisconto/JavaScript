@@ -1,0 +1,32 @@
+function contador(){
+    var iniciotxt = document.getElementById('txti')
+    var fimtxt = document.getElementById('txtf')
+    var passotxt = document.getElementById('txtp')
+    var resultado = document.getElementById('resultado')
+
+    if(iniciotxt.value.length == 0 || fimtxt.value.length == 0  || passotxt.value.length == 0){
+        resultado.innerHTML ='Impossível calcular'
+        //window.alert('[ERRO]')        
+    }else{
+        resultado.innerHTML = `Contando...</br>`
+        var inicio = Number(iniciotxt.value)
+        var fim = Number(fimtxt.value)
+        var passo = Number(passotxt.value)
+        if(passo <= 0){
+            window.alert('Passo inválido. Considerando passo = 1')
+            passo = 1
+        }
+        //crescente
+        if(inicio < fim){
+            for(var contador = inicio; contador <= fim; contador += passo)
+            resultado.innerHTML += `${contador} \u{1F449} `
+        } 
+        //regressiva
+        else{
+            for(var contador = inicio; contador >= fim; contador -= passo){
+                resultado.innerHTML += `${contador} \u{1F449}`
+            }
+        }
+        resultado.innerHTML += `Fim \u{1F3C1}`
+    }
+}
