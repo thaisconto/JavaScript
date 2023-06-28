@@ -1,0 +1,70 @@
+var num = document.getElementById('fnum')
+var lista = document.getElementById('flista')
+var resultado = document.getElementById('resultado')
+var valores = []
+
+
+function adicionar(){
+//para verificar se é um número e se já está na minha lista, 
+//vou puxar os métodos criados ao final isNumero e inLista
+    if(isNumero(num.value) && !inLista(num.value, valores)){
+       valores.push(Number(num.value))
+       //manuseando o select
+       var item = document.createElement('option')
+       item.text = `Valor ${num.value} foi adicionado.`
+       lista.appendChild(item)
+       resultado.innerHTML = ''
+    }else{
+        window.alert('Verifique os dados e tente novamente!')
+    }
+    //para que ao apertar em "adiconar" o campo de número apague sozinho
+    num.value = ''
+    num.focus()
+}
+
+
+function finalizar(){
+    if(valores.length == 0){
+        window.alert('Verifique os dados e tente novamente!')
+    }else{
+        var total = valores.length
+        var maior = 0
+        var menor = 0
+        var soma = 0
+        var i = 0
+        
+    for(var i in valores){
+        soma = soma + valores[i]
+        if(valores[i] > maior){
+            maior = valores[i]
+        }else if(valores[i] < menor){
+            menor = valores[i]
+        }
+    }
+        resultado.innerHTML = ''
+        resultado.innerHTML += `<p>Ao todo temos ${total} números adicionados.</p>`
+        resultado.innerHTML += `<p>O maior valor é ${maior}.</p>`
+        resultado.innerHTML += `<p>O menor valor é ${menor}.</p>`
+        resultado.innerHTML += `<p>A soma dos valores é ${soma}.</p>`
+        resultado.innerHTML += `<p>A média dos valores é ${soma/total}.</p>`
+}
+}
+
+
+function isNumero(n){
+    if(Number(n) >= 1 && Number(n) <= 100){
+        return true
+    }else{
+        return false
+    }
+}
+
+//indexOf -- busca em qual index está o valor n, se não encontrar retorna -1
+//se for -1 então não esta na minha lista, se for != -1 já esá na minha lista
+function inLista(n, l){
+    if(l.indexOf(Number(n)) != -1){
+        return true
+    }else{
+        return false
+    }
+}
