@@ -1,0 +1,64 @@
+function verificar(){
+    //criar variável ano atual (que puxará automaticamente)
+    var data = new Date()
+    var anoAtual = data.getFullYear() //Fullyear pega 4 dígitos
+    //criar variável que pega o ano do formulario digitido pelo usuário
+    var anoFormulario = document.getElementById('txtano')
+    var resultado = document.getElementById('resultado')
+
+    //se o ano digitafo for 0/vazio ou maior que o ano atual, dará um mensagem de alerta
+    if(anoFormulario.value.length == 0 || Number(anoFormulario.value) > anoAtual){
+        window.alert('[ERRO] Verifique os dados e tente novamente!')
+    }else{
+        //vamos puxar o sexo digitado
+        var sexoFormulario = document.getElementsByName('radsexo')
+        //calcular a idade
+        var idade = anoAtual - Number(anoFormulario.value)
+        //só para verificar se caluclou corretamente
+        //resultado.innerHTML = `Idade calculada: ${idade} anos` 
+      
+        //vamos criar a variável para imagem
+        var img = document.createElement('img')
+        img.setAttribute('id', 'foto')
+
+
+        //vamos criar variável gênero e verificar o sexo 
+        var genero = ''
+        //lembrando que o primeiro/0 radsex é M e segunda/1 é F
+       if(sexoFormulario[0].checked){
+            genero = 'Homem'
+            if(idade >= 0 && idade < 10){
+                //bebe
+                img.setAttribute('src', 'foto-bebe-M.png')
+            } else if(idade < 21){
+                //jovem
+                img.setAttribute('src', 'foto-jovem-M.png')
+            } else if (idade < 50){
+                //adulto
+                img.setAttribute('src', 'foto-adulto-M.png')
+            } else{
+                //idoso
+                img.setAttribute('src', 'foto-idoso-M.png')
+            }
+       }else{
+            genero = 'Mulher'
+            if(idade >= 0 && idade < 10){
+                //bebe
+                img.setAttribute('src', 'foto-bebe-F.png')
+            } else if(idade < 21){
+                //jovem
+                img.setAttribute('src', 'foto-jovem-F.png')
+            } else if (idade < 50){
+                //adulto
+                img.setAttribute('src', 'foto-adulto-F.png')
+            } else{
+                //idoso
+                img.setAttribute('src', 'foto-idoso-F.png')
+            }
+       }
+       //para verificar se está tudo ok até agora
+       resultado.style.textAlign = 'center'
+       resultado.innerHTML = `Detectamos ${genero} com ${idade} anos.` 
+       resultado.appendChild(img)
+    }
+}
