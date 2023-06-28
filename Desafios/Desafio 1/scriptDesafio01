@@ -1,0 +1,23 @@
+function carregar(){
+    //minha variável mensagem, vai pegar o div.mensagem
+var mensagem = window.document.getElementById('mensagem')
+    //minha variável imagem, vai pegar o div.imagem
+var imagem = window.document.getElementById('imagem')
+var data = 8 //new Date()
+
+//variável hora escolher entre manual ou automático
+var hora = data.getHours() 
+mensagem.innerHTML = `Agora são <strong>${hora}</strong> horas.`
+    
+//criar as condições de Bom dia, tarde e noite
+if(hora >= 0 && hora <12){
+    imagem.src = 'manhaPNG.png'
+    document.body.style.background = '#00ccff';
+}else if(hora >=12 && hora <=18){
+    imagem.src = 'tardePNG.png'
+    document.body.style.background = '#cc9900';
+}else{
+    imagem.src = 'noitePNG.png'
+    document.body.style.background = '#330066';
+}
+}
