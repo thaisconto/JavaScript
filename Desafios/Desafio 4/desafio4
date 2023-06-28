@@ -1,0 +1,16 @@
+function calcular(){
+    var numerotxt = document.getElementById('numerotxt')
+    var tabuada = document.getElementById('tabuada')
+
+    if(numerotxt.value.length == 0){
+        window.alert('[ERRO] Verifique os dados e tente novamente.')
+    }else{
+        var numero = Number(numerotxt.value)
+        tabuada.innerHTML = ''
+            for(var i = 0; i <= 10; i++){
+            var item = document.createElement('option')
+            item.text = `${numero} x ${i} = ${numero*i}`
+            tabuada.appendChild(item)
+        }
+    }
+}
