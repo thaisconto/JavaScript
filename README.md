@@ -24,8 +24,12 @@ Função:
 Criando e entendendo as funções [1](https://github.com/thaisconto/JavaScript/blob/main/Exerc%C3%ADcios/ex017.js) e [2](https://github.com/thaisconto/JavaScript/blob/main/Exerc%C3%ADcios/ex018.js)
 
 
+# **Desafios**
+Esses desafios são exercícios propostos sem resolução, onde pude aplicar na prática tudo que aprendi. Portanto, sei que podem existir formas mais faceis e menores de resolver, fiquem a vontade para me dar dicas!
 
-[Unchecked Exception](https://github.com/thaisconto/Bootcamp-QA/blob/main/UncheckedException.java)
-
-
+1 - Hora do dia: criar uma página web que mude de cor e imagem de acordo com a hora do dia [resolução](https://github.com/thaisconto/JavaScript/tree/main/Desafios/Desafio%201)
+2 - Idade e sexo: solicitar a idade e sexo do usuário e indicar qual a idade e uma foto de acordo com a resposta [resolução](https://github.com/thaisconto/JavaScript/tree/main/Desafios/Desafio%202)
+3 - Vamos contar: solicitar umnúmero incial e final e o passo e indicar a conatagem [resolução](https://github.com/thaisconto/JavaScript/blob/main/Desafios/Desafio%203/desafio3.html)
+4 - Tabuada: solicitar um número e indicar a tabuada [resolução](https://github.com/thaisconto/JavaScript/blob/main/Desafios/Desafio%204/desafio4)
+5 - Lista de números: solciitar números e indicar quantidade, maior, menor, soma e média [resolução](https://github.com/thaisconto/JavaScript/blob/main/Desafios/Desafio%205/desafio5)
 
