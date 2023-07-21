@@ -2,15 +2,15 @@ Por meio de cursos livres estou aprendendo JavaScript.
 Você vai reparar que os códigos contêm comentários, sei que não é uma boa prática mas esse repositório tem o objetivo de estudo por isso costumo anotar o que acho importante.
 
 # **Exercícios:**
-Eses exercícios foram propostos e resolvidos em aulas, com auxílio de professores e instrutores.
+Esses exercícios foram propostos e resolvidos em aulas, com auxílio de professores e instrutores.
 
 ## Primeiro programa:
 
-Estrutura com HTML e CSS- [1](https://github.com/thaisconto/JavaScript/blob/main/Exerc%C3%ADcios/ex003.html), [2](https://github.com/thaisconto/JavaScript/blob/main/Exerc%C3%ADcios/ex004.html), [3](https://github.com/thaisconto/JavaScript/blob/main/Exerc%C3%ADcios/ex01.html) e [4](https://github.com/thaisconto/JavaScript/blob/main/Exerc%C3%ADcios/ex02.html)
+Estrutura com HTML e CSS: [1](https://github.com/thaisconto/JavaScript/blob/main/Exerc%C3%ADcios/ex003.html), [2](https://github.com/thaisconto/JavaScript/blob/main/Exerc%C3%ADcios/ex004.html), [3](https://github.com/thaisconto/JavaScript/blob/main/Exerc%C3%ADcios/ex01.html) e [4](https://github.com/thaisconto/JavaScript/blob/main/Exerc%C3%ADcios/ex02.html)
 
 DOM: [1](https://github.com/thaisconto/JavaScript/blob/main/Exerc%C3%ADcios/ex005.html) e [2](https://github.com/thaisconto/JavaScript/blob/main/Exerc%C3%ADcios/ex006.html)
 
-Manuseando dados simples: [1](https://github.com/thaisconto/JavaScript/blob/main/Exerc%C3%ADcios/ex007.html), [2](https://github.com/thaisconto/JavaScript/blob/main/Exerc%C3%ADcios/ex008.js) e [3](https://github.com/thaisconto/JavaScript/blob/main/Exerc%C3%ADcios/ex009.js), 
+Manipulando dados simples: [1](https://github.com/thaisconto/JavaScript/blob/main/Exerc%C3%ADcios/ex007.html), [2](https://github.com/thaisconto/JavaScript/blob/main/Exerc%C3%ADcios/ex008.js) e [3](https://github.com/thaisconto/JavaScript/blob/main/Exerc%C3%ADcios/ex009.js), 
 
 ## Estruturas de repeticção:
 
@@ -24,7 +24,7 @@ While e For [1](https://github.com/thaisconto/JavaScript/blob/main/Exerc%C3%ADci
 
 ## Vetor:
 
-Manuseando uma var [1](https://github.com/thaisconto/JavaScript/blob/main/Exerc%C3%ADcios/ex016.js) e [2](https://github.com/thaisconto/JavaScript/blob/main/Exerc%C3%ADcios/ex019.js)
+Manipulando uma var [1](https://github.com/thaisconto/JavaScript/blob/main/Exerc%C3%ADcios/ex016.js) e [2](https://github.com/thaisconto/JavaScript/blob/main/Exerc%C3%ADcios/ex019.js)
 
 ## Função:
 
@@ -36,11 +36,11 @@ Esses desafios são exercícios propostos sem resolução, onde pude aplicar na 
 
 1 - Hora do dia: criar uma página web que mude de cor e imagem de acordo com a hora do dia [resolução](https://github.com/thaisconto/JavaScript/tree/main/Desafios/Desafio%201)
 
-2 - Idade e sexo: solicitar a idade e sexo do usuário e indicar qual a idade e uma foto de acordo com a resposta [resolução](https://github.com/thaisconto/JavaScript/tree/main/Desafios/Desafio%202)
+2 - Idade e sexo: solicitar a data de nascimento e sexo do usuário e indicar qual a idade e uma foto de acordo com a resposta [resolução](https://github.com/thaisconto/JavaScript/tree/main/Desafios/Desafio%202)
 
-3 - Vamos contar: solicitar umnúmero incial e final e o passo e indicar a conatagem [resolução](https://github.com/thaisconto/JavaScript/blob/main/Desafios/Desafio%203/desafio3.html)
+3 - Vamos contar: solicitar um número inicial e final e o passo e indicar a contagem [resolução](https://github.com/thaisconto/JavaScript/blob/main/Desafios/Desafio%203/desafio3.html)
 
 4 - Tabuada: solicitar um número e indicar a tabuada [resolução](https://github.com/thaisconto/JavaScript/blob/main/Desafios/Desafio%204/desafio4)
 
-5 - Lista de números: solciitar números e indicar quantidade, maior, menor, soma e média [resolução](https://github.com/thaisconto/JavaScript/blob/main/Desafios/Desafio%205/desafio5)
+5 - Lista de números: solicitar números e indicar quantidade, maior, menor, soma e média [resolução](https://github.com/thaisconto/JavaScript/blob/main/Desafios/Desafio%205/desafio5)
 
